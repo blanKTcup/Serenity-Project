@@ -5,10 +5,11 @@
   margin: 0;
   padding: 0;
   background-color: white;
+  font-family: "Spline Sans", sans-serif;
 }
 
 li, a {
-  font-family: "Spline Sans", sans-serif;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   color: black;
@@ -44,3 +45,28 @@ header {
 .profile {
   margin-left: 16px;
 }
+
+.dashboard {
+  display: inline-block;
+}
+
+.dashboard .dashboard-dropdown {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px black;
+  z-index: 999;
+}
+
+.dashboard-dropdown a {
+  list-style: none;
+  background-color: #e0c7ff;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.dashboard:hover .dashboard-dropdown {
+  display: block;
+}
+
+
