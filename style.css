@@ -16,11 +16,16 @@ li, a {
   text-decoration: none;
 }
 
+header, .nav-links, .nav-links a {
+  background-color: #fcc7f5;
+}
+
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
+  gap: 32px;
 }
 
 .logo {
@@ -31,11 +36,12 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 16px;
+  gap: 32px;
 }
 
 .nav-links li a {
   transition: all 0.3s ease 0s;
+  font-size: 24px;
 }
 
 .nav-links li a:hover {
@@ -59,8 +65,8 @@ header {
 }
 
 .dashboard-dropdown a {
-  list-style: none;
-  background-color: #e0c7ff;
+  
+  background-color: white;
   padding: 10px 15px;
   text-align: left;
 }
