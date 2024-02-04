@@ -42,13 +42,12 @@ nav, nav * {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 16px;
 }
 
-.nav-links li a {
+.nav-links>li>a {
   transition: all 0.3s ease 0s;
   padding: 7px 13px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .nav-links li a:hover {
@@ -59,16 +58,14 @@ nav, nav * {
   display: inline-block;
 }
 
-.dashboard .dashboard-links {
+.dashboard-links {
   display: none;
   position: absolute;
   min-width: 100px;
   box-shadow: 2px 2px 5px black;
-  z-index: 999;
 }
 
 .dashboard-links a {
-  
   background-color: white;
   padding: 10px 15px;
   text-align: left;
