@@ -5,36 +5,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Serenity Website</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<nav aria-label="primary menu">
-			<label class="logo">SERENITY</label>
-			<div class="nav-container">
-				<ul class="nav-links">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="events.html">EVENTS</a></li>
-					<li class="dashboard">
-						<a href="dashboard.html">DASHBOARD ▼</a>
-						<ul class="dashboard-links">
-							<li><a href="#">ANNOUNCEMENTS</a></li>
-							<li><a href="#">CALENDAR</a></li>
-							<li><a href="#">REMINDERS</a></li>
-							<li><a href="#">MESSAGES</a></li>
-							<li><a href="#">CLOTHING</a></li>
-							<li><a href="#">DANCES</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html">CONTACT US</a></li>
-					<li><a href="support.html">SUPPORT US</a></li>
-				</ul>
-				<img
-					class="hamburger"
-					src="./icons/profile_icon.svg"
-					alt="profile icon"
-					height="30"
-				/>
-			</div>
-		</nav>
+		<header>
+			<nav aria-label="primary menu">
+				<label class="logo">SERENITY</label>
+				<div class="navbar">
+					<ul class="nav-links">
+						<li class="nav-link">
+							<a href="index.html">HOME</a>
+						</li>
+						<li class="nav-link">
+							<a href="events.html">EVENTS</a>
+						</li>
+						<li class="nav-link dashboard">
+							<a href="dashboard.html"
+								>DASHBOARD
+								<span class="material-icons dropdown-icon">arrow_drop_down</span>
+							</a>
+							<ul class="dashboard-links">
+								<li><a href="#">ANNOUNCEMENTS</a></li>
+								<li><a href="#">CALENDAR</a></li>
+								<li><a href="#">REMINDERS</a></li>
+								<li><a href="#">MESSAGES</a></li>
+								<li><a href="#">CLOTHING</a></li>
+								<li><a href="#">DANCES</a></li>
+							</ul>
+						</li>
+						<li class="nav-link">
+							<a href="contact.html">CONTACT US</a>
+						</li>
+						<li class="nav-link">
+							<a href="support.html">SUPPORT US</a>
+						</li>
+					</ul>
+					<img
+						class="hamburger"
+						src="./icons/profile_icon.svg"
+						alt="profile icon"
+						height="30"
+					/>
+				</div>
+			</nav>
+		</header>
 		<p>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio hic labore
 			consectetur animi incidunt esse dolorem debitis facilis harum magni nemo
