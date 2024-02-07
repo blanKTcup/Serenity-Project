@@ -36,7 +36,7 @@ nav {
 .dashboard-links li {
 	list-style: none;
 	height: 100%;
-	padding: 0.5rem 1rem;
+	padding: 1rem 1rem;
 	font-size: 1.15rem;
 	font-weight: 600;
 	cursor: pointer;
@@ -47,40 +47,41 @@ a {
 	color: currentColor;
 }
 
-.nav-link:hover,
-.dashboard-links li:hover {
+/* button hover styling */
+.nav-link:hover, .dashboard-links li:hover {
 	background-color: black;
 	color: white;
 	border-radius: 0.5rem;
+}
+
+.dashboard a {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard .dropdown-icon {
+  font-size: 18px;
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
 }
 
 .dashboard:hover .dashboard-links {
 	display: block;
 }
 
-.dashboard-links {
+/* dashboard dropdown styling */
+.dashboard-links { 
 	position: absolute;
-	padding: 0.5rem 0;
 	margin: 1.9rem -1rem;
 	background: antiquewhite;
 	color: black;
 	box-shadow: 0px 4px 12px black;
 	border-radius: 0.5rem;
+  display: none;
 }
 
-.dashboard a {
-	display: flex;
-	align-items: center;
-}
-
-.dashboard .dropdown-icon {
-	font-size: 18px;
-	position: relative;
-	right: -5px;
-	transform: rotate(0deg);
-	transition: 0.3s ease-in-out all;
-}
-
-.dashboard-links:hover .dropdown-icon {
+.dashboard:hover .dropdown-icon {
 	transform: rotate(180deg);
 }
