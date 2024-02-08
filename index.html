@@ -5,20 +5,62 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Serenity Website</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+    <script src="index.js" charset="UTF-8"></script>
 	</head>
 	<body>
 		<header>
-      <img class="logo" src="./assets/serenity_color_logo.png" alt="Serenity Dance Group Logo" height="100">
 			<nav aria-label="primary menu">
-				<ul class="nav-links">
-					<li><a href="index.html">Home</a></li>
-          <li><a href="events.html">Events</a></li>
-					<li><a href="dashboard.html">Dashboard</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="support.html">Support Us</a></li>
-				</ul>
+				<label class="logo"><a href="index.html">SERENITY</a></label>
+				<div class="navbar">
+					<ul class="nav-links">
+						<li class="nav-link">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="nav-link">
+							<a href="events.html">Events</a>
+						</li>
+						<li class="nav-link dashboard">
+							<a href="dashboard.html"
+								>Dashboard
+								<span class="material-icons dropdown-icon">arrow_drop_down</span>
+							</a>
+							<ul class="dashboard-links">
+								<li><a href="#">Announcements</a></li>
+								<li><a href="#">Calendar</a></li>
+								<li><a href="#">Reminders</a></li>
+								<li><a href="#">Messages</a></li>
+								<li><a href="#">Clothing</a></li>
+								<li><a href="#">Dances</a></li>
+							</ul>
+						</li>
+						<li class="nav-link">
+							<a href="contact.html">Contact Us</a>
+						</li>
+						<li class="nav-link">
+							<a href="support.html">Support Us</a>
+						</li>
+					</ul>
+					<img
+						class="hamburger"
+						src="./icons/profile_icon.svg"
+						alt="profile icon"
+						height="30"
+					/>
+				</div>
 			</nav>
-      <img class="profile" src="./icons/profile_icon.svg" alt="profile icon" height="30" />
 		</header>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio hic labore
+			consectetur animi incidunt esse dolorem debitis facilis harum magni nemo
+			perspiciatis placeat sunt repudiandae tempore laborum, nobis, saepe
+			pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+			hic labore consectetur animi incidunt esse dolorem debitis facilis harum
+			magni nemo perspiciatis placeat sunt repudiandae tempore laborum, nobis,
+			saepe pariatur.
+		</p>
 	</body>
 </html>

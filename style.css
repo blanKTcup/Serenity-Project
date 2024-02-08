@@ -1,46 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: white;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Spline Sans', sans-serif;
 }
 
-li, a {
-  font-family: "Spline Sans", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.3rem 10%;
+	width: 100%;
+	background-color: antiquewhite;
 }
 
 .logo {
-  cursor: pointer;
-  margin-right: auto;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
 }
 
 .nav-links {
-  list-style: none;
+	display: flex;
+}
+
+.nav-link,
+.dashboard-links li {
+	list-style: none;
+	height: 100%;
+	padding: 1rem 1rem;
+	font-size: 1.15rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+/* button hover styling */
+.nav-link:hover, .dashboard-links li:hover {
+	background-color: black;
+	color: white;
+	border-radius: 0.5rem;
+}
+
+.dashboard a {
   display: flex;
-  gap: 16px;
+  align-items: center;
 }
 
-.nav-links li a {
-  transition: all 0.3s ease 0s;
+.dashboard .dropdown-icon {
+  font-size: 18px;
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
 }
 
-.nav-links li a:hover {
-  color: #A0D6FA;
+.dashboard:hover .dashboard-links {
+	display: block;
 }
 
-.profile {
-  margin-left: 16px;
+/* dashboard dropdown styling */
+.dashboard-links { 
+	position: absolute;
+	margin: 1.9rem -1rem;
+	background: antiquewhite;
+	color: black;
+	box-shadow: 0px 4px 12px black;
+	border-radius: 0.5rem;
+  display: none;
+}
+
+.dashboard:hover .dropdown-icon {
+	transform: rotate(180deg);
 }
