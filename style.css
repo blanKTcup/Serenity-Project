@@ -32,8 +32,7 @@ nav {
 	display: flex;
 }
 
-.nav-link,
-.dashboard-links li {
+.nav-link {
 	list-style: none;
 	height: 100%;
 	padding: 1rem 1rem;
@@ -48,42 +47,15 @@ a {
 }
 
 /* button hover styling */
-.nav-link:hover, .dashboard-links li:hover {
+.nav-link:hover {
 	background-color: black;
 	color: white;
 	border-radius: 0.5rem;
 }
 
-.dashboard a {
+a {
   display: flex;
   align-items: center;
-}
-
-.dashboard .dropdown-icon {
-  font-size: 18px;
-  position: relative;
-  right: -5px;
-  transform: rotate(0deg);
-  transition: 0.3s ease-in-out all;
-}
-
-.dashboard:hover .dashboard-links {
-	display: block;
-}
-
-/* dashboard dropdown styling */
-.dashboard-links { 
-	position: absolute;
-	margin: 1.9rem -1rem;
-	background: antiquewhite;
-	color: black;
-	box-shadow: 0px 4px 12px black;
-	border-radius: 0.5rem;
-  display: none;
-}
-
-.dashboard:hover .dropdown-icon {
-	transform: rotate(180deg);
 }
 
 .rounded-icon {
