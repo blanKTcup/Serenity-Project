@@ -17,27 +17,21 @@
 
 .header-buttons-container {
   display: flex;
-  gap: 8px;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1.3rem 10%;
-	width: 100%;
-	background-color: antiquewhite;
+  gap: 0.8em;
 }
 
 .navbar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	gap: 1rem;
+	padding: 1.3rem 10%;
+	width: 100%;
+	background-color: white;
 }
 
-.nav-links {
+.nav-links-container {
 	display: flex;
+  gap: 32px;
 }
 
 .nav-link {
