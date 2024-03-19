@@ -9,8 +9,8 @@
 
 .header-container {
 	height: 7vh;
-  width: 100%;
-  padding: 0 2em;
+	width: 100%;
+	padding: 0 2em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,32 +22,32 @@
 }
 
 .gradient-bg {
-	background: linear-gradient(45deg, #a3e3ff, #CEF5D3, #FCD1F5, #D7B7FF);
-  background-size: 300% 300%;
-  animation: gradient-bg-animation 12s infinite alternate;
+	background: linear-gradient(45deg, #a3e3ff, #cef5d3, #fcd1f5, #d7b7ff);
+	background-size: 300% 300%;
+	animation: gradient-bg-animation 12s infinite alternate;
 }
 
 @keyframes gradient-bg-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
 }
 
 .navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1.3rem 10%;
 	width: 100%;
 	background-color: white;
+	box-shadow: 0 3px 10px -6px black;
 }
 
 .nav-links-container {
 	display: flex;
-	gap: 32px;
+	gap: 10em;
 }
 
 .nav-link {
@@ -75,7 +75,7 @@ a {
 	height: 40px;
 	width: 40px;
 	color: rgb(28, 30, 33);
-	background-color: rgb(228, 230, 235);
+	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
