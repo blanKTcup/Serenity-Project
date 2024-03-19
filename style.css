@@ -71,7 +71,7 @@ a {
 	border-radius: 0.5rem;
 }
 
-.rounded-button {
+.rounded-btn {
 	height: 40px;
 	width: 40px;
 	color: rgb(28, 30, 33);
@@ -87,6 +87,6 @@ a {
 	font-size: 24px;
 }
 
-.rounded-button:hover {
+.rounded-btn:hover {
 	background-color: rgb(200, 203, 209);
 }
