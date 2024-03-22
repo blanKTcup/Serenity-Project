@@ -15,8 +15,67 @@
 	font-family: 'Spline Sans', sans-serif;
 }
 
-.btn {
+
+.header-container {
+  height: 8vh;
+	width: 100%;
+	padding: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-buttons-container {
+  display: flex;
+	gap: 0.8em;
+}
+
+.gradient-bg {
+  background: linear-gradient(45deg, var(--light-blue), var(--light-green), var(--light-pink), var(--dark-pink));
+	background-size: 300% 300%;
+	animation: gradient-bg-animation 12s infinite alternate;
+}
+
+@keyframes gradient-bg-animation {
+  0% {
+    background-position: left;
+	}
+	100% {
+    background-position: right;
+	}
+}
+
+.navbar {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  padding: 0.5em;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 3px 10px -6px black;
+}
+
+.nav__list {
+  display: flex;
+	gap: 5em;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  position: relative;
+  text-decoration: none;
   background-color: white;
+	color: currentColor;
+  font-size: 1rem;
+	font-weight: 600;
+  padding: .5em .5em;
+}
+
+.btn {
+  
   color: black;
   padding: .5em 1em;
   border: none;
@@ -25,7 +84,7 @@
   cursor: pointer;
 }
 
-.btn.btn-border-underline::before {
+.nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -38,68 +97,9 @@
   transform: scaleX(0)
 }
 
-.btn.btn-border-underline:hover::before,
-.btn.btn-border-underline:focus::before {
+.nav__link:hover::after,
+.nav__link:focus::after {
   transform: scaleX(1);
-}
-
-.header-container {
-	height: 8vh;
-	width: 100%;
-	padding: 2em;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.header-buttons-container {
-	display: flex;
-	gap: 0.8em;
-}
-
-.gradient-bg {
-	background: linear-gradient(45deg, var(--light-blue), var(--light-green), var(--light-pink), var(--dark-pink));
-	background-size: 300% 300%;
-	animation: gradient-bg-animation 12s infinite alternate;
-}
-
-@keyframes gradient-bg-animation {
-	0% {
-		background-position: left;
-	}
-	100% {
-		background-position: right;
-	}
-}
-
-.navbar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  padding: 0.5em;
-	width: 100%;
-	background-color: white;
-	box-shadow: 0 3px 10px -6px black;
-}
-
-.nav__list {
-	display: flex;
-	gap: 5em;
-}
-
-.nav__item {
-  list-style: none;
-}
-
-.nav__link {
-  text-decoration: none;
-	color: currentColor;
-}
-
-.nav__btn {
-	font-size: 1.15rem;
-	font-weight: 600;
-  padding: .5em .5em;
 }
 
 .active__nav__link {
