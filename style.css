@@ -33,7 +33,7 @@
   bottom: 0;
   height: 3px;
   background-color: var(--light-pink);
-  transition: transform 350ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 
   transform: scaleX(0)
 }
@@ -82,21 +82,21 @@
 	box-shadow: 0 3px 10px -6px black;
 }
 
-.nav-links-container {
+.nav__list {
 	display: flex;
 	gap: 5em;
 }
 
-.nav-links-container > li {
+.nav__item {
   list-style: none;
 }
 
-a {
+.nav__link {
   text-decoration: none;
 	color: currentColor;
 }
 
-.nav-link {
+.nav__btn {
 	font-size: 1.15rem;
 	font-weight: 600;
   padding: .5em .5em;

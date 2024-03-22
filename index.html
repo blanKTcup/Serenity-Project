@@ -9,11 +9,12 @@
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
+    <script defer src="index.js" charset="UTF-8"></script>
 	</head>
 	<body>
 		<header>
 			<div class="header-container gradient-bg">
-				<a href="index.html"
+				<a href="/"
 					><img
 						src="./assets/serenity_black_logo.png"
 						alt="Serenity Dance Group Logo Links to Home Page"
@@ -36,34 +37,34 @@
 				</div>
 			</div>
 			<nav aria-label="primary menu" class="navbar">
-				<ul class="nav-links-container">
-					<li>
-						<a href="index.html">
-							<button class="nav-link btn btn-border-underline">Home</button>
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="/">
+							<button class="nav__btn btn btn-border-underline">Home</button>
 						</a>
 					</li>
-					<li>
-						<a href="./pages/calendar.html">
-							<button class="nav-link btn btn-border-underline">
+					<li class="nav__item">
+						<a class="nav__link" href="./pages/calendar.html">
+							<button class="nav__btn btn btn-border-underline">
 								Calendar
 							</button>
 						</a>
 					</li>
-					<li>
-						<a href="./pages/media.html">
-							<button class="nav-link btn btn-border-underline">Media</button>
+					<li class="nav__item">
+						<a class="nav__link" href="./pages/media.html">
+							<button class="nav__btn btn btn-border-underline">Media</button>
 						</a>
 					</li>
-					<li>
-						<a href="./pages/support.html">
-							<button class="nav-link btn btn-border-underline">
+					<li class="nav__item">
+						<a class="nav__link" href="./pages/support.html">
+							<button class="nav__btn btn btn-border-underline">
 								Support Us
 							</button>
 						</a>
 					</li>
-					<li>
-						<a href="./pages/members.html">
-							<button class="nav-link btn btn-border-underline">Members</button>
+					<li class="nav__item">
+						<a class="nav__link" href="./pages/members.html">
+							<button class="nav__btn btn btn-border-underline">Members</button>
 						</a>
 					</li>
 				</ul>
@@ -78,7 +79,7 @@
 			magni nemo perspiciatis placeat sunt repudiandae tempore laborum, nobis,
 			saepe pariatur.
 		</p>
-		
+		<button class="nav__btn btn btn-border-underline">Members</button>
 
 		<!-- scripts -->
 		<script
@@ -89,6 +90,5 @@
 			nomodule
 			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
 		></script>
-		<script src="index.js" charset="UTF-8"></script>
 	</body>
 </html>
