@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
 
 :root {
-  --light-pink: #fcd1f5;
-  --dark-pink: #d7b7ff;
-  --light-blue: #a3e3ff;
-  --light-green: #cef5d3;
-  --dark-white: rgb(200, 203, 209);
+	--light-pink: #fcd1f5;
+	--dark-pink: #d7b7ff;
+	--light-blue: #a3e3ff;
+	--light-green: #cef5d3;
+	--dark-white: rgb(200, 203, 209);
 }
 
 * {
@@ -15,9 +15,8 @@
 	font-family: 'Spline Sans', sans-serif;
 }
 
-
 .header-container {
-  height: 8vh;
+	height: 8vh;
 	width: 100%;
 	padding: 2em;
 	display: flex;
@@ -26,86 +25,91 @@
 }
 
 .header-buttons-container {
-  display: flex;
+	display: flex;
 	gap: 0.8em;
 }
 
 .gradient-bg {
-  background: linear-gradient(45deg, var(--light-blue), var(--light-green), var(--light-pink), var(--dark-pink));
+	background: linear-gradient(
+		45deg,
+		var(--light-blue),
+		var(--light-green),
+		var(--light-pink),
+		var(--dark-pink)
+	);
 	background-size: 300% 300%;
 	animation: gradient-bg-animation 12s infinite alternate;
 }
 
 @keyframes gradient-bg-animation {
-  0% {
-    background-position: left;
+	0% {
+		background-position: left;
 	}
 	100% {
-    background-position: right;
+		background-position: right;
 	}
 }
 
 .navbar {
-  display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-  padding: 0.5em;
+	padding: 0.5em;
 	width: 100%;
 	background-color: white;
 	box-shadow: 0 3px 10px -6px black;
 }
 
 .nav__list {
-  display: flex;
+	display: flex;
 	gap: 5em;
 }
 
 .nav__item {
-  list-style: none;
+	list-style: none;
 }
 
 .nav__link {
-  position: relative;
-  text-decoration: none;
-  background-color: white;
+	position: relative;
+	text-decoration: none;
+	background-color: white;
 	color: currentColor;
-  font-size: 1rem;
+	font-size: 1rem;
 	font-weight: 600;
-  padding: .5em .5em;
+	padding: 0.5em 0.5em;
 }
 
 .btn {
-  
-  color: black;
-  padding: .5em 1em;
-  border: none;
-  outline: none;
-  position: relative;
-  cursor: pointer;
+	color: black;
+	padding: 0.5em 1em;
+	border: none;
+	outline: none;
+	position: relative;
+	cursor: pointer;
 }
 
 .nav__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 3px;
-  background-color: var(--light-pink);
-  transition: transform 300ms ease-in-out;
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 3px;
+  color: rgb(221, 82, 82);
+	background-color: var(--light-pink);
+	transition: transform 300ms ease-in-out;
 
-  transform: scaleX(0)
+	transform: scaleX(0);
 }
 
 .nav__link:hover::after,
 .nav__link:focus::after {
-  transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 .active__nav__link {
-  
+  color: var(--dark-pink);
 }
-
 
 .rounded-btn {
 	height: 40px;
