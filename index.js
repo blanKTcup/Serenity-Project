@@ -8,6 +8,6 @@ navLinkEls.forEach(navLinkEl => {
     (windowPathname === navLinkPathname) || 
     (windowPathname === '/index.html' && navLinkPathname === '/')
     ) {
-    navLinkEl.classList.add('active__nav__link');
+    navLinkEl.classList.add('nav__link--active');
   }
 });

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
 
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Spline Sans', sans-serif;
+}
+
+/* CUSTOM VARIABLES */
 :root {
 	--light-pink: #fcd1f5;
 	--dark-pink: #d7b7ff;
@@ -8,12 +17,17 @@
 	--dark-white: rgb(200, 203, 209);
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Spline Sans', sans-serif;
+/* KEYFRAMES */
+@keyframes gradient-bg-animation {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
 }
+
+/* ===================== */
 
 .header-container {
 	height: 8vh;
@@ -36,19 +50,32 @@
 		var(--light-green),
 		var(--light-pink),
 		var(--dark-pink)
-	);
-	background-size: 300% 300%;
-	animation: gradient-bg-animation 12s infinite alternate;
-}
+    );
+    background-size: 300% 300%;
+    animation: gradient-bg-animation 12s infinite alternate;
+  }
+  
+  .rounded-btn {
+    height: 40px;
+    width: 40px;
+    color: rgb(28, 30, 33);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+    font-size: 24px;
+  }
+  
+  .rounded-btn:hover {
+    background-color: var(--dark-white);
+  }
 
-@keyframes gradient-bg-animation {
-	0% {
-		background-position: left;
-	}
-	100% {
-		background-position: right;
-	}
-}
+/* ===================== */
 
 .navbar {
 	display: flex;
@@ -79,15 +106,6 @@
 	padding: 0.5em 0.5em;
 }
 
-.btn {
-	color: black;
-	padding: 0.5em 1em;
-	border: none;
-	outline: none;
-	position: relative;
-	cursor: pointer;
-}
-
 .nav__link::after {
 	content: '';
 	position: absolute;
@@ -98,7 +116,6 @@
   color: rgb(221, 82, 82);
 	background-color: var(--light-pink);
 	transition: transform 300ms ease-in-out;
-
 	transform: scaleX(0);
 }
 
@@ -107,26 +124,8 @@
 	transform: scaleX(1);
 }
 
-.active__nav__link {
+.nav__link--active {
   color: var(--dark-pink);
 }
 
-.rounded-btn {
-	height: 40px;
-	width: 40px;
-	color: rgb(28, 30, 33);
-	background-color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	border-radius: 50%;
-	border: none;
-	text-decoration: none;
-	transition: background 0.2s;
-	font-size: 24px;
-}
-
-.rounded-btn:hover {
-	background-color: var(--dark-white);
-}
+/* ===================== */
